@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>+1 mes juntos</title>
+<title>Feliz aniversario</title>
 
 <style>
 
@@ -25,7 +25,7 @@ align-items:center;
 
 font-family:Arial,sans-serif;
 
-background:linear-gradient(135deg,#c8e6c9,#f8e1c4,#f5c6aa);
+background:linear-gradient(135deg,#ffd166,#ff9a44,#ff6b6b);
 
 padding:25px;
 
@@ -131,17 +131,9 @@ const paginas=[
 
 {
 
-titulo:"+1 mes juntos!!",
+titulo:"¡Feliz aniversario, Vargas!",
 
-texto:"Ya pasó otro mes y el mes pasado vivimos MUCHAS cosas nuevas juntos que nunca esperé que viviéramos, y la verdad, me sigue haciendo muy feliz poder seguir viviendo más experiencias así contigo."
-
-},
-
-{
-
-titulo:"",
-
-texto:"A veces me da risa pensar en cómo éramos antes de ser novios."
+texto:"No puedo creer que ya cumplimos un año juntos."
 
 },
 
@@ -149,7 +141,7 @@ texto:"A veces me da risa pensar en cómo éramos antes de ser novios."
 
 titulo:"",
 
-texto:"Porque cuando éramos amigos, me acuerdo que no perdías ninguna oportunidad para burlarte de mí."
+texto:"A veces pienso en todo lo que nos costó estar juntos y me da gusto que nos aferramos a que funcionara."
 
 },
 
@@ -157,7 +149,7 @@ texto:"Porque cuando éramos amigos, me acuerdo que no perdías ninguna oportuni
 
 titulo:"",
 
-texto:"Y que (aunque fuera un POCO cierto) te la pasabas diciéndome basic white girl."
+texto:"Amo todo de ti. Y este año ha sido lo mejor de mi vida, me encanta cómo me siento cuando estoy contigo, como puedo hacer cualquier tontería contigo y como tú me haces reír con todas tus tonterías."
 
 },
 
@@ -165,7 +157,7 @@ texto:"Y que (aunque fuera un POCO cierto) te la pasabas diciéndome basic white
 
 titulo:"",
 
-texto:"Y sí, admito que en esa época (YA NO) sí tenía algunas características que se parecían a una basic white girl y que era un poco predecible."
+texto:"Y amo todavía más tener a alguien que sé que me ama y me conoce MUY bien."
 
 },
 
@@ -173,7 +165,15 @@ texto:"Y sí, admito que en esa época (YA NO) sí tenía algunas característic
 
 titulo:"",
 
-texto:"Pero como me conoces MUY bien, estoy segura de que vas a contestar correctamente esta pregunta y, además de tu sorpresa, vas a ganar que tu novia no se enoje. ¡2x1!"
+texto:"Ya casi vienes a Corea, y aunque solo han pasado unos días te extraño demasiado, pero estamos a punto de tener nuestro primer viaje juntos."
+
+},
+
+{
+
+titulo:"",
+
+texto:"Y como me conoces tanto… sé que vas a contestar bien esta pregunta y así vas a ganarte la sorpresa."
 
 },
 
@@ -181,7 +181,7 @@ texto:"Pero como me conoces MUY bien, estoy segura de que vas a contestar correc
 
 titulo:"Pregunta",
 
-texto:"Cuando decías que era una basic white girl y antes de ser fit (casi toda la prepa), ¿cuál era el único lugar al que NUNCA perdonaba ir todos los días, así fuera súper tarde?"
+texto:"¿Cuál es la canción de Disney que más canto recientemente? (Y la respuesta tiene que ver con tu sorpresa)."
 
 }
 
@@ -207,8 +207,6 @@ if(pagina===6){
 
 respuesta.style.display="inline";
 
-respuesta.placeholder="Escribe tu respuesta aquí";
-
 boton.innerHTML="Responder";
 
 }
@@ -229,19 +227,27 @@ return;
 
 let r=respuesta.value.toLowerCase();
 
-if(r.includes("starbucks")){
+if(
+
+r.includes("froyo yolo")
+
+||
+
+r.includes("froyo yolo de liv y maddie")
+
+){
 
 titulo.innerHTML="¡CORRECTO!";
 
-texto.innerHTML="Sí, la respuesta era Starbucks. Y como ahora eres mi novio, ya te volviste igual de girly. Y sí, lo que te voy a mandar es algo de Starbucks. Como el mes pasado, mándame a qué hora vas a estar en tu casa (aunque no tendrías que hacerlo si aceptaras bajar Life360, pero al parecer me odias y me eres infiel).";
+texto.innerHTML="La canción es 'Froyo Yolo de Liv y Maddie'. Ganaste una Dairy Queen. Y te va a llegar hoy, ya está programada, pero no le puse hora, así que mándame un mensaje diciéndome a qué hora vas a estar en tu casa o te la mandaré a la hora que se me dé la gana.";
 
 }
 
 else{
 
-titulo.innerHTML="¡Eres horrible! Bye.";
+titulo.innerHTML="¡Te odio! Eres un horrible novio.";
 
-texto.innerHTML="Pensé que me amabas. La respuesta era Starbucks. Pero no te preocupes, igual te voy a mandar la sorpresa (solo porque ya la programé, porque no la mereces).";
+texto.innerHTML="Pensé que me conocías un poquito mejor. La respuesta era 'Froyo Yolo de Liv y Maddie'. Pero no te preocupes, igual te voy a mandar la sorpresa (solo porque ya la programé, porque no la mereces).";
 
 }
 
